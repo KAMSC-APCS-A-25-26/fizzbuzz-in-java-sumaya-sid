@@ -1,3 +1,4 @@
+import java.util.Scanner;
 public class FizzBuzz {
     /**
      * Print the FizzBuzz sequence for 1..100 to standard output.
@@ -9,6 +10,26 @@ public class FizzBuzz {
      * Output should be 100 whitespace-separated tokens (spaces or newlines are fine).
      */
     public static void main(String[] args) {
-        // TODO
+        Scanner sc = new Scanner(System.in);
+        for(int j=1;j<101;j++)
+        {
+            if(j%5 == 0 && j%3 == 0)
+            {
+                System.out.println ("FizzBuzz");
+            }
+            else if (j%5==0)
+            {
+                System.out.println("Buzz");
+            }
+            else if (j%3==0)
+            {
+                System.out.println ("Fizz");
+            }
+            else
+            {
+                System.out.println (j);
+            }
+
+        }
     }
 }
